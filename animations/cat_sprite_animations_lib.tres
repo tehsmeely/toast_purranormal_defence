@@ -1,0 +1,566 @@
+[gd_resource type="AnimationLibrary" load_steps=34 format=3 uid="uid://duao3awo5yf5v"]
+
+[sub_resource type="Animation" id="Animation_2hs0m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_down"]
+}
+
+[sub_resource type="Animation" id="Animation_b26ja"]
+resource_name = "p_idle_down"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_down"]
+}
+
+[sub_resource type="Animation" id="Animation_nvl0a"]
+resource_name = "p_idle_downleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_downleft"]
+}
+
+[sub_resource type="Animation" id="Animation_ivpsa"]
+resource_name = "p_idle_downright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_downright"]
+}
+
+[sub_resource type="Animation" id="Animation_1jxqa"]
+resource_name = "p_idle_left"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_left"]
+}
+
+[sub_resource type="Animation" id="Animation_dw05a"]
+resource_name = "p_idle_right"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_right"]
+}
+
+[sub_resource type="Animation" id="Animation_n7gha"]
+resource_name = "p_idle_up"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_up"]
+}
+
+[sub_resource type="Animation" id="Animation_urp6a"]
+resource_name = "p_idle_upleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_upleft"]
+}
+
+[sub_resource type="Animation" id="Animation_bwjta"]
+resource_name = "p_idle_upright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle_upright"]
+}
+
+[sub_resource type="Animation" id="Animation_p7e6d"]
+resource_name = "p_running_down"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_down"]
+}
+
+[sub_resource type="Animation" id="Animation_o8s0m"]
+resource_name = "p_running_downleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_downleft"]
+}
+
+[sub_resource type="Animation" id="Animation_5told"]
+resource_name = "p_running_downright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_downright"]
+}
+
+[sub_resource type="Animation" id="Animation_jk7g0"]
+resource_name = "p_running_left"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_left"]
+}
+
+[sub_resource type="Animation" id="Animation_fb1xb"]
+resource_name = "p_running_right"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_right"]
+}
+
+[sub_resource type="Animation" id="Animation_hymeh"]
+resource_name = "p_running_up"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_up"]
+}
+
+[sub_resource type="Animation" id="Animation_auy08"]
+resource_name = "p_running_upleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_upleft"]
+}
+
+[sub_resource type="Animation" id="Animation_h4gsa"]
+resource_name = "p_running_upright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"running_upright"]
+}
+
+[sub_resource type="Animation" id="Animation_oijdqb"]
+resource_name = "p_sittingdown_down"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_down"]
+}
+
+[sub_resource type="Animation" id="Animation_1827dn"]
+resource_name = "p_sittingdown_downleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_downleft"]
+}
+
+[sub_resource type="Animation" id="Animation_289euj1qmd"]
+resource_name = "p_sittingdown_downright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_downright"]
+}
+
+[sub_resource type="Animation" id="Animation_djmo12dij1"]
+resource_name = "p_sittingdown_left"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_left"]
+}
+
+[sub_resource type="Animation" id="Animation_90aa21d1"]
+resource_name = "p_sittingdown_right"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_right"]
+}
+
+[sub_resource type="Animation" id="Animation_n902dm1"]
+resource_name = "p_sittingdown_up"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_up"]
+}
+
+[sub_resource type="Animation" id="Animation_add12er2"]
+resource_name = "p_sittingdown_upleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_upleft"]
+}
+
+[sub_resource type="Animation" id="Animation_ap0129kdm"]
+resource_name = "p_sittingdown_upright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"sittingdown_upright"]
+}
+
+[sub_resource type="Animation" id="Animation_b26j0"]
+resource_name = "p_walking_down"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_down"]
+}
+
+[sub_resource type="Animation" id="Animation_nvl01"]
+resource_name = "p_walking_downleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_downleft"]
+}
+
+[sub_resource type="Animation" id="Animation_ivps1"]
+resource_name = "p_walking_downright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_downright"]
+}
+
+[sub_resource type="Animation" id="Animation_1jxqw"]
+resource_name = "p_walking_left"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_left"]
+}
+
+[sub_resource type="Animation" id="Animation_dw050"]
+resource_name = "p_walking_right"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_right"]
+}
+
+[sub_resource type="Animation" id="Animation_n7ghd"]
+resource_name = "p_walking_up"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_up"]
+}
+
+[sub_resource type="Animation" id="Animation_urp6f"]
+resource_name = "p_walking_upleft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_upleft"]
+}
+
+[sub_resource type="Animation" id="Animation_bwjto"]
+resource_name = "p_walking_upright"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walking_upright"]
+}
+
+[resource]
+_data = {
+&"RESET": SubResource("Animation_2hs0m"),
+&"p_idle_down": SubResource("Animation_b26ja"),
+&"p_idle_downleft": SubResource("Animation_nvl0a"),
+&"p_idle_downright": SubResource("Animation_ivpsa"),
+&"p_idle_left": SubResource("Animation_1jxqa"),
+&"p_idle_right": SubResource("Animation_dw05a"),
+&"p_idle_up": SubResource("Animation_n7gha"),
+&"p_idle_upleft": SubResource("Animation_urp6a"),
+&"p_idle_upright": SubResource("Animation_bwjta"),
+&"p_running_down": SubResource("Animation_p7e6d"),
+&"p_running_downleft": SubResource("Animation_o8s0m"),
+&"p_running_downright": SubResource("Animation_5told"),
+&"p_running_left": SubResource("Animation_jk7g0"),
+&"p_running_right": SubResource("Animation_fb1xb"),
+&"p_running_up": SubResource("Animation_hymeh"),
+&"p_running_upleft": SubResource("Animation_auy08"),
+&"p_running_upright": SubResource("Animation_h4gsa"),
+&"p_sittingdown_down": SubResource("Animation_oijdqb"),
+&"p_sittingdown_downleft": SubResource("Animation_1827dn"),
+&"p_sittingdown_downright": SubResource("Animation_289euj1qmd"),
+&"p_sittingdown_left": SubResource("Animation_djmo12dij1"),
+&"p_sittingdown_right": SubResource("Animation_90aa21d1"),
+&"p_sittingdown_up": SubResource("Animation_n902dm1"),
+&"p_sittingdown_upleft": SubResource("Animation_add12er2"),
+&"p_sittingdown_upright": SubResource("Animation_ap0129kdm"),
+&"p_walking_down": SubResource("Animation_b26j0"),
+&"p_walking_downleft": SubResource("Animation_nvl01"),
+&"p_walking_downright": SubResource("Animation_ivps1"),
+&"p_walking_left": SubResource("Animation_1jxqw"),
+&"p_walking_right": SubResource("Animation_dw050"),
+&"p_walking_up": SubResource("Animation_n7ghd"),
+&"p_walking_upleft": SubResource("Animation_urp6f"),
+&"p_walking_upright": SubResource("Animation_bwjto")
+}

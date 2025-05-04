@@ -1,0 +1,50 @@
+[gd_resource type="AnimationNodeBlendSpace2D" load_steps=10 format=3 uid="uid://l16lkuimvyuf"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4flbx"]
+animation = &"idle_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_onrkg"]
+animation = &"idle_up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_i3pqv"]
+animation = &"idle_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hqtel"]
+animation = &"idle_down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sweqy"]
+animation = &"idle_upleft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2hs0m"]
+animation = &"idle_upright"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1jxqw"]
+animation = &"idle_downright"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_dw050"]
+animation = &"idle_downleft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b26j0"]
+animation = &"idle_down"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_4flbx")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_onrkg")
+blend_point_1/pos = Vector2(0, -1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_i3pqv")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_hqtel")
+blend_point_3/pos = Vector2(0, 1)
+blend_point_4/node = SubResource("AnimationNodeAnimation_sweqy")
+blend_point_4/pos = Vector2(-0.5, -0.5)
+blend_point_5/node = SubResource("AnimationNodeAnimation_2hs0m")
+blend_point_5/pos = Vector2(0.5, -0.5)
+blend_point_6/node = SubResource("AnimationNodeAnimation_1jxqw")
+blend_point_6/pos = Vector2(0.5, 0.5)
+blend_point_7/node = SubResource("AnimationNodeAnimation_dw050")
+blend_point_7/pos = Vector2(-0.5, 0.5)
+blend_point_8/node = SubResource("AnimationNodeAnimation_b26j0")
+blend_point_8/pos = Vector2(0, 0)
+snap = Vector2(0.5, 0.5)
+blend_mode = 1

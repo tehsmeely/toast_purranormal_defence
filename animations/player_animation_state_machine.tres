@@ -1,0 +1,51 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=13 format=3 uid="uid://dsxe8d0deoytl"]
+
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://l16lkuimvyuf" path="res://animations/idle.tres" id="1_uy505"]
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://b6mm1jgatwuwn" path="res://animations/running.tres" id="2_oy4s4"]
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://b45pxso1e4m1t" path="res://animations/sittingdown.tres" id="3_2sxxn"]
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://cyrcdfa7tdrfs" path="res://animations/walking.tres" id="4_8xylq"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sweqy"]
+advance_mode = 2
+advance_expression = "movement_state!=\"Running\""
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2hs0m"]
+advance_mode = 2
+advance_expression = "movement_state==\"Running\""
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dw050"]
+advance_mode = 2
+advance_expression = "movement_state!=\"Idle\""
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b26j0"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1jxqw"]
+advance_mode = 2
+advance_expression = "movement_state==\"Idle\""
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_n7ghd"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uy505"]
+advance_mode = 2
+advance_condition = &"end"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oy4s4"]
+advance_mode = 2
+advance_expression = "movement_state!=\"Idle\""
+
+[resource]
+states/End/position = Vector2(918.666, 220.667)
+states/Idle/node = ExtResource("1_uy505")
+states/Idle/position = Vector2(624.667, -150.667)
+states/Running/node = ExtResource("2_oy4s4")
+states/Running/position = Vector2(492.972, 282.667)
+"states/Sitting Down/node" = ExtResource("3_2sxxn")
+"states/Sitting Down/position" = Vector2(417.333, -101.179)
+states/Start/position = Vector2(166.667, 261.333)
+states/Walking/node = ExtResource("4_8xylq")
+states/Walking/position = Vector2(492.959, 100.667)
+transitions = ["Running", "Walking", SubResource("AnimationNodeStateMachineTransition_sweqy"), "Walking", "Running", SubResource("AnimationNodeStateMachineTransition_2hs0m"), "Idle", "Walking", SubResource("AnimationNodeStateMachineTransition_dw050"), "Start", "Running", SubResource("AnimationNodeStateMachineTransition_b26j0"), "Walking", "Sitting Down", SubResource("AnimationNodeStateMachineTransition_1jxqw"), "Sitting Down", "Idle", SubResource("AnimationNodeStateMachineTransition_n7ghd"), "Idle", "End", SubResource("AnimationNodeStateMachineTransition_uy505"), "Sitting Down", "Walking", SubResource("AnimationNodeStateMachineTransition_oy4s4")]
+graph_offset = Vector2(19, -208.512)

@@ -1,0 +1,22 @@
+[configuration]
+
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+
+linux.debug.x86_64 =     "res://../mini-fantasy-survival-rs/target/debug/libmini_fantasy_survival_rs.so"
+linux.release.x86_64 =   "res://../mini-fantasy-survival-rs/target/release/libmini_fantasy_survival_rs.so"
+windows.debug.x86_64 =   "res://../mini-fantasy-survival-rs/target/debug/mini_fantasy_survival_rs.dll"
+windows.release.x86_64 = "res://../mini-fantasy-survival-rs/target/release/mini_fantasy_survival_rs.dll"
+macos.debug =            "res://../mini-fantasy-survival-rs/target/debug/libmini_fantasy_survival_rs.dylib"
+macos.release =          "res://../mini-fantasy-survival-rs/target/release/libmini_fantasy_survival_rs.dylib"
+macos.debug.arm64 =      "res://../mini-fantasy-survival-rs/target/debug/libmini_fantasy_survival_rs.dylib"
+macos.release.arm64 =    "res://../mini-fantasy-survival-rs/target/release/libmini_fantasy_survival_rs.dylib"
+
+
+[icons]
+
+Player = "res://res/IconGodotNode/node_2d/icon_character.png"
+Enemy = "res://res/IconGodotNode/node_2d/icon_skull.png"
