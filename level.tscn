@@ -1,8 +1,13 @@
-[gd_scene load_steps=6 format=4 uid="uid://dip7gy5fm56y"]
+[gd_scene load_steps=7 format=4 uid="uid://dip7gy5fm56y"]
 
 [ext_resource type="Texture2D" uid="uid://b6gabfq75a3n3" path="res://res/Minifantasy_CastlesAndStrongholds_v.2.0/Minifantasy_CastlesAndStrongholds_Assets/Tileset/Indoor/IndoorTileset.png" id="1_oi3di"]
 [ext_resource type="PackedScene" uid="uid://clevgyn8p6tw0" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bhqlc4tx6l3g7" path="res://enemy.tscn" id="3_oi3di"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_oi3di"]
+vertices = PackedVector2Array(240.688, 106.109, -184.211, 110.859, -148.492, -108.023, 234.281, -108.969)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(244, -119, 251, 116, -196, 121, -157, -118)])
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1n30v"]
 texture = ExtResource("1_oi3di")
@@ -198,6 +203,9 @@ sources/2 = SubResource("TileSetAtlasSource_1n30v")
 
 [node name="Level" type="Node2D"]
 
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_oi3di")
+
 [node name="Layer0" type="TileMapLayer" parent="."]
 texture_filter = 1
 use_parent_material = true
@@ -213,7 +221,7 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Layer1" type="TileMapLayer" parent="."]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAABAAMAAgAZABMAAAAEAAMAAgATAA0AAAAGAAMAAgATAA0AAAAFAAMAAgAVABMAAAADAAMAAgATAA0AAAD//wMAAgASAA0AAAD//wEAAgASAAwAAAD//wAAAgASAAwAAAD/////AgASAAwAAAD///7/AgASAAwAAAD///3/AgASAAwAAAD///z/AgASAAUAAAAAAPz/AgATAA0AAAABAPz/AgATAA0AAAACAPz/AgATAA0AAAADAPz/AgATAA0AAAAEAPz/AgATAA0AAAAFAPz/AgATAA0AAAAGAPz/AgATAA0AAAAHAPz/AgATAA0AAAAIAPz/AgATAA0AAAAMAPz/AgATAA0AAAALAPz/AgATAA0AAAAKAPz/AgATAA0AAAAJAPz/AgATAA0AAAANAPz/AgATAA0AAAAOAPz/AgATAA0AAAAPAPz/AgATAA0AAAAQAPz/AgAWAAUAAAAQAAMAAgAWAA0AAAAQAAEAAgAWAAwAAAAQAAAAAgAWAAwAAAAQAP//AgAWAAwAAAAQAP7/AgAWAAwAAAAPAAMAAgATAA0AAAAKAAMAAgATAA0AAAAJAAMAAgATAA0AAAAIAAMAAgAVABMAAAALAAMAAgAVABMAAAAMAAMAAgATAA0AAAANAAMAAgATAA0AAAAOAAMAAgAVABMAAAAHAAMAAgATAA0AAAA=")
+tile_map_data = PackedByteArray("AAD//wEAAgASAAwAAAD//wAAAgASAAwAAAD/////AgASAAwAAAD///7/AgASAAwAAAD///3/AgASAAwAAAD///z/AgASAAUAAAAAAPz/AgATAA0AAAABAPz/AgATAA0AAAACAPz/AgATAA0AAAADAPz/AgATAA0AAAAEAPz/AgATAA0AAAAFAPz/AgATAA0AAAAGAPz/AgATAA0AAAAHAPz/AgATAA0AAAAIAPz/AgATAA0AAAAMAPz/AgATAA0AAAALAPz/AgATAA0AAAAKAPz/AgATAA0AAAAJAPz/AgATAA0AAAANAPz/AgATAA0AAAAOAPz/AgATAA0AAAAPAPz/AgATAA0AAAAQAPz/AgAWAAUAAAAQAAEAAgAWAAwAAAAQAAAAAgAWAAwAAAAQAP//AgAWAAwAAAAQAP7/AgAWAAwAAAD//wIAAgAQAAkAAAAQAAIAAgAQAAkAAAA=")
 tile_set = SubResource("TileSet_35kre")
 
 [node name="Camera2D" type="Camera2D" parent="."]
